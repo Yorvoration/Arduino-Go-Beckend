@@ -21,7 +21,7 @@ type User struct {
 func main() {
 	router := gin.Default()
 	router.POST("/on", on)
-	router.Run(":8080")
+	router.Run()
 
 	fmt.Println("Server is running on port 8080")
 }
